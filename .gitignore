@@ -1,0 +1,11 @@
+#ignore vscode settings
+.vscode
+
+#ignore 
+build/*
+#
+bin/*
+
+# exception to the rule
+!build/.gitkeep 
+!bin/.gitkeep 
