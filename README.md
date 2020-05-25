@@ -125,7 +125,7 @@ target_link_directories(${PROJECT_NAME} PRIVATE ${INCLUDE} ${COMMON})
 If you've successfully built the code contained in the repo, you would see two executables in /bin directory: module_A and module_B. If you run the executables, it should produce following output.
 
 ```
-$./bin/module_A
+$ ./bin/module_A
 Hello from foo_common1()
 G'day from foo_common2()
 Bonjour from foo1_A()
@@ -133,7 +133,7 @@ Ciao from foo2_A()
 ```
 
 ```
-$./bin/module_B
+$ ./bin/module_B
 Hello from foo_common1()
 G'day from foo_common2()
 Ni hao from foo1_B()
@@ -142,12 +142,13 @@ Shalom from foo2_B()
 ## Install cmake
 ### Linux
 ```
-$sudo apt-get -y install cmake
-$which cmake
-/usr/bin/cmake
-```
+$ cd Downloads
+$ tar zxf cmake-3.17.2.tar.gz
+$ cd cmake-3.17.2
+$ sudo ./bootstrap
+($ sudo apt install libssl-dev)
+$ sudo make
+$ sudo make install
+$ cmake --version
 
-### MacOS
-```
-$brew install cmake
 ```
