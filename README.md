@@ -68,35 +68,35 @@ Place your modules here. I define module as a set of files that together create 
 
 #### CMakeLists.txt (module)
 Set ${PROJECT_NAME} for this module.
-```
+```cmake
 project(module_A)
 ```
 Include paths for common source/header files.
-```
+```cmake
 set(COMMON "../../common_src")
 set(INCLUDE "../../common_include")
 ```
-```
+```cmake
 add_executable(
     ${PROJECT_NAME}
 ```
 Here, include all files that is contained within the module subdirectory.
 If you create new files for your module, make sure to add them in this line.
-```
+```cmake
     mainA.cpp moduleA.h # e.g. file1.cpp file2.cpp header1.h ... 
 ```
 If you want to include any files that are common across different modules, place them inside /common_include and /common_src directories, and add the source files in this line. Don't forget to add ${COMMON}/ before the file name.
-```
+```cmake
     ${COMMON}/common1.cpp ${COMMON}/common2.cpp  # e.g. ${COMMON}/common3.cpp ...
 )
 ```
 
 Following line adds given paths to look for necessary files when compiling.
-```
+```cmake
 target_include_directories(${PROJECT_NAME} PRIVATE ${INCLUDE} ${COMMON})
 ```
 Following line adds given paths for linking necessary files.
-```
+```cmake
 target_link_directories(${PROJECT_NAME} PRIVATE ${INCLUDE} ${COMMON})
 ```
 
