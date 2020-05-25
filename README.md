@@ -140,4 +140,14 @@ Ni hao from foo1_B()
 Shalom from foo2_B()
 ```
 ## Install cmake
-More to come ...
+### Linux
+```
+$sudo apt-get -y install cmake
+$which cmake
+/usr/bin/cmake
+```
+
+### MacOS
+```
+$brew install cmake
+```
