@@ -78,7 +78,7 @@ set(INCLUDE "../../common_include")
 ```
 ```
 add_executable(
-    ${PROJECT_NAME} 
+    ${PROJECT_NAME}
 ```
 Here, include all files that is contained within the module subdirectory.
 If you create new files for your module, make sure to add them in this line.
