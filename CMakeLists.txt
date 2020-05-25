@@ -13,5 +13,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
 # Add module directories as needed.
 # List from least dependent to most dependent
 
-add_subdirectory(modules/Module_A)
-add_subdirectory(modules/Module_B)
+add_subdirectory(modules/module_A)
+add_subdirectory(modules/module_B)
