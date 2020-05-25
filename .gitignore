@@ -1,11 +1,10 @@
 #ignore vscode settings
 .vscode
 
-#ignore 
+# exclude everything inside following directories
 build/*
-#
 bin/*
 
-# exception to the rule
+# exception to the rule. Keep the "empty" directory
 !build/.gitkeep 
 !bin/.gitkeep 
